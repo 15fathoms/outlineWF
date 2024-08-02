@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="demo/css/style.css">
-	<link rel="icon" type="image/svg+xml" href="demo/favicon.svg">
-	<title>Fathoms Outline Web Font</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="demo/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="demo/favicon.svg">
+    <title>Fathoms Outline Web Font</title>
     <style>
         body {
             background: #0d1117;
@@ -22,7 +23,7 @@
         }
 
         .auto-grid {
-            display: grid !important;
+            display: grid;
             grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
             gap: 1rem;
         }
@@ -33,14 +34,38 @@
             margin: auto;
         }
 
+        .note {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin-top: -200%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px) saturate(180%);
+            transition: all 0.3s;
+        }
+
+        .copied .note {
+            margin-top: 0;
+        }
+
         li {
             display: flex;
+            position: relative;
             flex-direction: column;
             aspect-ratio: 1/1;
             background: #161b22;
             border: 1px solid #30363d;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        li:hover {
+            background: #0d1117 !important;
         }
 
         li p {
@@ -52,1962 +77,1991 @@
         }
     </style>
 </head>
-<body>
-	<header>
-		<h1>Fathoms Outline Web Font</h1>
-	</header>
 
-	<div id="icons-wrapper">
-		<section>
-			<ul class="auto-grid">
-                
-                    <li>
-                        <i class="icon o-academic-cap"></i>
-                        <p class="js-classname">o-academic-cap</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-adjustments-horizontal"></i>
-                        <p class="js-classname">o-adjustments-horizontal</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-adjustments-vertical"></i>
-                        <p class="js-classname">o-adjustments-vertical</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-archive-box"></i>
-                        <p class="js-classname">o-archive-box</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-archive-box-arrow-down"></i>
-                        <p class="js-classname">o-archive-box-arrow-down</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-archive-box-x-mark"></i>
-                        <p class="js-classname">o-archive-box-x-mark</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-down"></i>
-                        <p class="js-classname">o-arrow-down</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-down-circle"></i>
-                        <p class="js-classname">o-arrow-down-circle</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-down-left"></i>
-                        <p class="js-classname">o-arrow-down-left</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-down-on-square"></i>
-                        <p class="js-classname">o-arrow-down-on-square</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-down-on-square-stack"></i>
-                        <p class="js-classname">o-arrow-down-on-square-stack</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-down-right"></i>
-                        <p class="js-classname">o-arrow-down-right</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-down-tray"></i>
-                        <p class="js-classname">o-arrow-down-tray</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-left"></i>
-                        <p class="js-classname">o-arrow-left</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-left-circle"></i>
-                        <p class="js-classname">o-arrow-left-circle</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-left-end-on-rectangle"></i>
-                        <p class="js-classname">o-arrow-left-end-on-rectangle</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-left-on-rectangle"></i>
-                        <p class="js-classname">o-arrow-left-on-rectangle</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-left-start-on-rectangle"></i>
-                        <p class="js-classname">o-arrow-left-start-on-rectangle</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-long-down"></i>
-                        <p class="js-classname">o-arrow-long-down</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-long-left"></i>
-                        <p class="js-classname">o-arrow-long-left</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-long-right"></i>
-                        <p class="js-classname">o-arrow-long-right</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-long-up"></i>
-                        <p class="js-classname">o-arrow-long-up</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-path"></i>
-                        <p class="js-classname">o-arrow-path</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-path-rounded-square"></i>
-                        <p class="js-classname">o-arrow-path-rounded-square</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-right"></i>
-                        <p class="js-classname">o-arrow-right</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-right-circle"></i>
-                        <p class="js-classname">o-arrow-right-circle</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-right-end-on-rectangle"></i>
-                        <p class="js-classname">o-arrow-right-end-on-rectangle</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-right-on-rectangle"></i>
-                        <p class="js-classname">o-arrow-right-on-rectangle</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-right-start-on-rectangle"></i>
-                        <p class="js-classname">o-arrow-right-start-on-rectangle</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-small-down"></i>
-                        <p class="js-classname">o-arrow-small-down</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-small-left"></i>
-                        <p class="js-classname">o-arrow-small-left</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-small-right"></i>
-                        <p class="js-classname">o-arrow-small-right</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-small-up"></i>
-                        <p class="js-classname">o-arrow-small-up</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-top-right-on-square"></i>
-                        <p class="js-classname">o-arrow-top-right-on-square</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-trending-down"></i>
-                        <p class="js-classname">o-arrow-trending-down</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-trending-up"></i>
-                        <p class="js-classname">o-arrow-trending-up</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-turn-down-left"></i>
-                        <p class="js-classname">o-arrow-turn-down-left</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-turn-down-right"></i>
-                        <p class="js-classname">o-arrow-turn-down-right</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-turn-left-down"></i>
-                        <p class="js-classname">o-arrow-turn-left-down</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-turn-left-up"></i>
-                        <p class="js-classname">o-arrow-turn-left-up</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-turn-right-down"></i>
-                        <p class="js-classname">o-arrow-turn-right-down</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-turn-right-up"></i>
-                        <p class="js-classname">o-arrow-turn-right-up</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-turn-up-left"></i>
-                        <p class="js-classname">o-arrow-turn-up-left</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-turn-up-right"></i>
-                        <p class="js-classname">o-arrow-turn-up-right</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-up"></i>
-                        <p class="js-classname">o-arrow-up</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-up-circle"></i>
-                        <p class="js-classname">o-arrow-up-circle</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-up-left"></i>
-                        <p class="js-classname">o-arrow-up-left</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-up-on-square"></i>
-                        <p class="js-classname">o-arrow-up-on-square</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-up-on-square-stack"></i>
-                        <p class="js-classname">o-arrow-up-on-square-stack</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-up-right"></i>
-                        <p class="js-classname">o-arrow-up-right</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-up-tray"></i>
-                        <p class="js-classname">o-arrow-up-tray</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-uturn-down"></i>
-                        <p class="js-classname">o-arrow-uturn-down</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-uturn-left"></i>
-                        <p class="js-classname">o-arrow-uturn-left</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-uturn-right"></i>
-                        <p class="js-classname">o-arrow-uturn-right</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrow-uturn-up"></i>
-                        <p class="js-classname">o-arrow-uturn-up</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrows-pointing-in"></i>
-                        <p class="js-classname">o-arrows-pointing-in</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrows-pointing-out"></i>
-                        <p class="js-classname">o-arrows-pointing-out</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrows-right-left"></i>
-                        <p class="js-classname">o-arrows-right-left</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-arrows-up-down"></i>
-                        <p class="js-classname">o-arrows-up-down</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-at-symbol"></i>
-                        <p class="js-classname">o-at-symbol</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-backspace"></i>
-                        <p class="js-classname">o-backspace</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-backward"></i>
-                        <p class="js-classname">o-backward</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-banknotes"></i>
-                        <p class="js-classname">o-banknotes</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-bars-2"></i>
-                        <p class="js-classname">o-bars-2</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-bars-3"></i>
-                        <p class="js-classname">o-bars-3</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-bars-3-bottom-left"></i>
-                        <p class="js-classname">o-bars-3-bottom-left</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-bars-3-bottom-right"></i>
-                        <p class="js-classname">o-bars-3-bottom-right</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-bars-3-center-left"></i>
-                        <p class="js-classname">o-bars-3-center-left</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-bars-4"></i>
-                        <p class="js-classname">o-bars-4</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-bars-arrow-down"></i>
-                        <p class="js-classname">o-bars-arrow-down</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-bars-arrow-up"></i>
-                        <p class="js-classname">o-bars-arrow-up</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-battery-0"></i>
-                        <p class="js-classname">o-battery-0</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-battery-100"></i>
-                        <p class="js-classname">o-battery-100</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-battery-50"></i>
-                        <p class="js-classname">o-battery-50</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-beaker"></i>
-                        <p class="js-classname">o-beaker</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-bell"></i>
-                        <p class="js-classname">o-bell</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-bell-alert"></i>
-                        <p class="js-classname">o-bell-alert</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-bell-slash"></i>
-                        <p class="js-classname">o-bell-slash</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-bell-snooze"></i>
-                        <p class="js-classname">o-bell-snooze</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-bold"></i>
-                        <p class="js-classname">o-bold</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-bolt"></i>
-                        <p class="js-classname">o-bolt</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-bolt-slash"></i>
-                        <p class="js-classname">o-bolt-slash</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-book-open"></i>
-                        <p class="js-classname">o-book-open</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-bookmark"></i>
-                        <p class="js-classname">o-bookmark</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-bookmark-slash"></i>
-                        <p class="js-classname">o-bookmark-slash</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-bookmark-square"></i>
-                        <p class="js-classname">o-bookmark-square</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-briefcase"></i>
-                        <p class="js-classname">o-briefcase</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-bug-ant"></i>
-                        <p class="js-classname">o-bug-ant</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-building-library"></i>
-                        <p class="js-classname">o-building-library</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-building-office"></i>
-                        <p class="js-classname">o-building-office</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-building-office-2"></i>
-                        <p class="js-classname">o-building-office-2</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-building-storefront"></i>
-                        <p class="js-classname">o-building-storefront</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-cake"></i>
-                        <p class="js-classname">o-cake</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-calculator"></i>
-                        <p class="js-classname">o-calculator</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-calendar"></i>
-                        <p class="js-classname">o-calendar</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-calendar-date-range"></i>
-                        <p class="js-classname">o-calendar-date-range</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-calendar-days"></i>
-                        <p class="js-classname">o-calendar-days</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-camera"></i>
-                        <p class="js-classname">o-camera</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-chart-bar"></i>
-                        <p class="js-classname">o-chart-bar</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-chart-bar-square"></i>
-                        <p class="js-classname">o-chart-bar-square</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-chart-pie"></i>
-                        <p class="js-classname">o-chart-pie</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-chat-bubble-bottom-center"></i>
-                        <p class="js-classname">o-chat-bubble-bottom-center</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-chat-bubble-bottom-center-text"></i>
-                        <p class="js-classname">o-chat-bubble-bottom-center-text</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-chat-bubble-left"></i>
-                        <p class="js-classname">o-chat-bubble-left</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-chat-bubble-left-ellipsis"></i>
-                        <p class="js-classname">o-chat-bubble-left-ellipsis</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-chat-bubble-left-right"></i>
-                        <p class="js-classname">o-chat-bubble-left-right</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-chat-bubble-oval-left"></i>
-                        <p class="js-classname">o-chat-bubble-oval-left</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-chat-bubble-oval-left-ellipsis"></i>
-                        <p class="js-classname">o-chat-bubble-oval-left-ellipsis</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-check"></i>
-                        <p class="js-classname">o-check</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-check-badge"></i>
-                        <p class="js-classname">o-check-badge</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-check-circle"></i>
-                        <p class="js-classname">o-check-circle</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-chevron-double-down"></i>
-                        <p class="js-classname">o-chevron-double-down</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-chevron-double-left"></i>
-                        <p class="js-classname">o-chevron-double-left</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-chevron-double-right"></i>
-                        <p class="js-classname">o-chevron-double-right</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-chevron-double-up"></i>
-                        <p class="js-classname">o-chevron-double-up</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-chevron-down"></i>
-                        <p class="js-classname">o-chevron-down</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-chevron-left"></i>
-                        <p class="js-classname">o-chevron-left</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-chevron-right"></i>
-                        <p class="js-classname">o-chevron-right</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-chevron-up"></i>
-                        <p class="js-classname">o-chevron-up</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-chevron-up-down"></i>
-                        <p class="js-classname">o-chevron-up-down</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-circle-stack"></i>
-                        <p class="js-classname">o-circle-stack</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-clipboard"></i>
-                        <p class="js-classname">o-clipboard</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-clipboard-document"></i>
-                        <p class="js-classname">o-clipboard-document</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-clipboard-document-check"></i>
-                        <p class="js-classname">o-clipboard-document-check</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-clipboard-document-list"></i>
-                        <p class="js-classname">o-clipboard-document-list</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-clock"></i>
-                        <p class="js-classname">o-clock</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-cloud"></i>
-                        <p class="js-classname">o-cloud</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-cloud-arrow-down"></i>
-                        <p class="js-classname">o-cloud-arrow-down</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-cloud-arrow-up"></i>
-                        <p class="js-classname">o-cloud-arrow-up</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-code-bracket"></i>
-                        <p class="js-classname">o-code-bracket</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-code-bracket-square"></i>
-                        <p class="js-classname">o-code-bracket-square</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-cog"></i>
-                        <p class="js-classname">o-cog</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-cog-6-tooth"></i>
-                        <p class="js-classname">o-cog-6-tooth</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-cog-8-tooth"></i>
-                        <p class="js-classname">o-cog-8-tooth</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-command-line"></i>
-                        <p class="js-classname">o-command-line</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-computer-desktop"></i>
-                        <p class="js-classname">o-computer-desktop</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-cpu-chip"></i>
-                        <p class="js-classname">o-cpu-chip</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-credit-card"></i>
-                        <p class="js-classname">o-credit-card</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-cube"></i>
-                        <p class="js-classname">o-cube</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-cube-transparent"></i>
-                        <p class="js-classname">o-cube-transparent</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-currency-bangladeshi"></i>
-                        <p class="js-classname">o-currency-bangladeshi</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-currency-dollar"></i>
-                        <p class="js-classname">o-currency-dollar</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-currency-euro"></i>
-                        <p class="js-classname">o-currency-euro</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-currency-pound"></i>
-                        <p class="js-classname">o-currency-pound</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-currency-rupee"></i>
-                        <p class="js-classname">o-currency-rupee</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-currency-yen"></i>
-                        <p class="js-classname">o-currency-yen</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-cursor-arrow-rays"></i>
-                        <p class="js-classname">o-cursor-arrow-rays</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-cursor-arrow-ripple"></i>
-                        <p class="js-classname">o-cursor-arrow-ripple</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-device-phone-mobile"></i>
-                        <p class="js-classname">o-device-phone-mobile</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-device-tablet"></i>
-                        <p class="js-classname">o-device-tablet</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-divide"></i>
-                        <p class="js-classname">o-divide</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-document"></i>
-                        <p class="js-classname">o-document</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-document-arrow-down"></i>
-                        <p class="js-classname">o-document-arrow-down</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-document-arrow-up"></i>
-                        <p class="js-classname">o-document-arrow-up</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-document-chart-bar"></i>
-                        <p class="js-classname">o-document-chart-bar</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-document-check"></i>
-                        <p class="js-classname">o-document-check</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-document-currency-bangladeshi"></i>
-                        <p class="js-classname">o-document-currency-bangladeshi</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-document-currency-dollar"></i>
-                        <p class="js-classname">o-document-currency-dollar</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-document-currency-euro"></i>
-                        <p class="js-classname">o-document-currency-euro</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-document-currency-pound"></i>
-                        <p class="js-classname">o-document-currency-pound</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-document-currency-rupee"></i>
-                        <p class="js-classname">o-document-currency-rupee</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-document-currency-yen"></i>
-                        <p class="js-classname">o-document-currency-yen</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-document-duplicate"></i>
-                        <p class="js-classname">o-document-duplicate</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-document-magnifying-glass"></i>
-                        <p class="js-classname">o-document-magnifying-glass</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-document-minus"></i>
-                        <p class="js-classname">o-document-minus</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-document-plus"></i>
-                        <p class="js-classname">o-document-plus</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-document-text"></i>
-                        <p class="js-classname">o-document-text</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-ellipsis-horizontal"></i>
-                        <p class="js-classname">o-ellipsis-horizontal</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-ellipsis-horizontal-circle"></i>
-                        <p class="js-classname">o-ellipsis-horizontal-circle</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-ellipsis-vertical"></i>
-                        <p class="js-classname">o-ellipsis-vertical</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-envelope"></i>
-                        <p class="js-classname">o-envelope</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-envelope-open"></i>
-                        <p class="js-classname">o-envelope-open</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-equals"></i>
-                        <p class="js-classname">o-equals</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-exclamation-circle"></i>
-                        <p class="js-classname">o-exclamation-circle</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-exclamation-triangle"></i>
-                        <p class="js-classname">o-exclamation-triangle</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-eye"></i>
-                        <p class="js-classname">o-eye</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-eye-dropper"></i>
-                        <p class="js-classname">o-eye-dropper</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-eye-slash"></i>
-                        <p class="js-classname">o-eye-slash</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-face-frown"></i>
-                        <p class="js-classname">o-face-frown</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-face-smile"></i>
-                        <p class="js-classname">o-face-smile</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-film"></i>
-                        <p class="js-classname">o-film</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-finger-print"></i>
-                        <p class="js-classname">o-finger-print</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-fire"></i>
-                        <p class="js-classname">o-fire</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-flag"></i>
-                        <p class="js-classname">o-flag</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-folder"></i>
-                        <p class="js-classname">o-folder</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-folder-arrow-down"></i>
-                        <p class="js-classname">o-folder-arrow-down</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-folder-minus"></i>
-                        <p class="js-classname">o-folder-minus</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-folder-open"></i>
-                        <p class="js-classname">o-folder-open</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-folder-plus"></i>
-                        <p class="js-classname">o-folder-plus</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-forward"></i>
-                        <p class="js-classname">o-forward</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-funnel"></i>
-                        <p class="js-classname">o-funnel</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-gif"></i>
-                        <p class="js-classname">o-gif</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-gift"></i>
-                        <p class="js-classname">o-gift</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-gift-top"></i>
-                        <p class="js-classname">o-gift-top</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-globe-alt"></i>
-                        <p class="js-classname">o-globe-alt</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-globe-americas"></i>
-                        <p class="js-classname">o-globe-americas</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-globe-asia-australia"></i>
-                        <p class="js-classname">o-globe-asia-australia</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-globe-europe-africa"></i>
-                        <p class="js-classname">o-globe-europe-africa</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-h1"></i>
-                        <p class="js-classname">o-h1</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-h2"></i>
-                        <p class="js-classname">o-h2</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-h3"></i>
-                        <p class="js-classname">o-h3</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-hand-raised"></i>
-                        <p class="js-classname">o-hand-raised</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-hand-thumb-down"></i>
-                        <p class="js-classname">o-hand-thumb-down</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-hand-thumb-up"></i>
-                        <p class="js-classname">o-hand-thumb-up</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-hashtag"></i>
-                        <p class="js-classname">o-hashtag</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-heart"></i>
-                        <p class="js-classname">o-heart</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-home"></i>
-                        <p class="js-classname">o-home</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-home-modern"></i>
-                        <p class="js-classname">o-home-modern</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-identification"></i>
-                        <p class="js-classname">o-identification</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-inbox"></i>
-                        <p class="js-classname">o-inbox</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-inbox-arrow-down"></i>
-                        <p class="js-classname">o-inbox-arrow-down</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-inbox-stack"></i>
-                        <p class="js-classname">o-inbox-stack</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-information-circle"></i>
-                        <p class="js-classname">o-information-circle</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-italic"></i>
-                        <p class="js-classname">o-italic</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-key"></i>
-                        <p class="js-classname">o-key</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-language"></i>
-                        <p class="js-classname">o-language</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-lifebuoy"></i>
-                        <p class="js-classname">o-lifebuoy</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-light-bulb"></i>
-                        <p class="js-classname">o-light-bulb</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-link"></i>
-                        <p class="js-classname">o-link</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-link-slash"></i>
-                        <p class="js-classname">o-link-slash</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-list-bullet"></i>
-                        <p class="js-classname">o-list-bullet</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-lock-closed"></i>
-                        <p class="js-classname">o-lock-closed</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-lock-open"></i>
-                        <p class="js-classname">o-lock-open</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-magnifying-glass"></i>
-                        <p class="js-classname">o-magnifying-glass</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-magnifying-glass-circle"></i>
-                        <p class="js-classname">o-magnifying-glass-circle</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-magnifying-glass-minus"></i>
-                        <p class="js-classname">o-magnifying-glass-minus</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-magnifying-glass-plus"></i>
-                        <p class="js-classname">o-magnifying-glass-plus</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-map"></i>
-                        <p class="js-classname">o-map</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-map-pin"></i>
-                        <p class="js-classname">o-map-pin</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-megaphone"></i>
-                        <p class="js-classname">o-megaphone</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-microphone"></i>
-                        <p class="js-classname">o-microphone</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-minus"></i>
-                        <p class="js-classname">o-minus</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-minus-circle"></i>
-                        <p class="js-classname">o-minus-circle</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-minus-small"></i>
-                        <p class="js-classname">o-minus-small</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-moon"></i>
-                        <p class="js-classname">o-moon</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-musical-note"></i>
-                        <p class="js-classname">o-musical-note</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-newspaper"></i>
-                        <p class="js-classname">o-newspaper</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-no-symbol"></i>
-                        <p class="js-classname">o-no-symbol</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-numbered-list"></i>
-                        <p class="js-classname">o-numbered-list</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-paint-brush"></i>
-                        <p class="js-classname">o-paint-brush</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-paper-airplane"></i>
-                        <p class="js-classname">o-paper-airplane</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-paper-clip"></i>
-                        <p class="js-classname">o-paper-clip</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-pause"></i>
-                        <p class="js-classname">o-pause</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-pause-circle"></i>
-                        <p class="js-classname">o-pause-circle</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-pencil"></i>
-                        <p class="js-classname">o-pencil</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-pencil-square"></i>
-                        <p class="js-classname">o-pencil-square</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-percent-badge"></i>
-                        <p class="js-classname">o-percent-badge</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-phone"></i>
-                        <p class="js-classname">o-phone</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-phone-arrow-down-left"></i>
-                        <p class="js-classname">o-phone-arrow-down-left</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-phone-arrow-up-right"></i>
-                        <p class="js-classname">o-phone-arrow-up-right</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-phone-x-mark"></i>
-                        <p class="js-classname">o-phone-x-mark</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-photo"></i>
-                        <p class="js-classname">o-photo</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-play"></i>
-                        <p class="js-classname">o-play</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-play-circle"></i>
-                        <p class="js-classname">o-play-circle</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-play-pause"></i>
-                        <p class="js-classname">o-play-pause</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-plus"></i>
-                        <p class="js-classname">o-plus</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-plus-circle"></i>
-                        <p class="js-classname">o-plus-circle</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-plus-small"></i>
-                        <p class="js-classname">o-plus-small</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-power"></i>
-                        <p class="js-classname">o-power</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-presentation-chart-bar"></i>
-                        <p class="js-classname">o-presentation-chart-bar</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-presentation-chart-line"></i>
-                        <p class="js-classname">o-presentation-chart-line</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-printer"></i>
-                        <p class="js-classname">o-printer</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-puzzle-piece"></i>
-                        <p class="js-classname">o-puzzle-piece</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-qr-code"></i>
-                        <p class="js-classname">o-qr-code</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-question-mark-circle"></i>
-                        <p class="js-classname">o-question-mark-circle</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-queue-list"></i>
-                        <p class="js-classname">o-queue-list</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-radio"></i>
-                        <p class="js-classname">o-radio</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-receipt-percent"></i>
-                        <p class="js-classname">o-receipt-percent</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-receipt-refund"></i>
-                        <p class="js-classname">o-receipt-refund</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-rectangle-group"></i>
-                        <p class="js-classname">o-rectangle-group</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-rectangle-stack"></i>
-                        <p class="js-classname">o-rectangle-stack</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-rocket-launch"></i>
-                        <p class="js-classname">o-rocket-launch</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-rss"></i>
-                        <p class="js-classname">o-rss</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-scale"></i>
-                        <p class="js-classname">o-scale</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-scissors"></i>
-                        <p class="js-classname">o-scissors</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-server"></i>
-                        <p class="js-classname">o-server</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-server-stack"></i>
-                        <p class="js-classname">o-server-stack</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-share"></i>
-                        <p class="js-classname">o-share</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-shield-check"></i>
-                        <p class="js-classname">o-shield-check</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-shield-exclamation"></i>
-                        <p class="js-classname">o-shield-exclamation</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-shopping-bag"></i>
-                        <p class="js-classname">o-shopping-bag</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-shopping-cart"></i>
-                        <p class="js-classname">o-shopping-cart</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-signal"></i>
-                        <p class="js-classname">o-signal</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-signal-slash"></i>
-                        <p class="js-classname">o-signal-slash</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-slash"></i>
-                        <p class="js-classname">o-slash</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-sparkles"></i>
-                        <p class="js-classname">o-sparkles</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-speaker-wave"></i>
-                        <p class="js-classname">o-speaker-wave</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-speaker-x-mark"></i>
-                        <p class="js-classname">o-speaker-x-mark</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-square-2-stack"></i>
-                        <p class="js-classname">o-square-2-stack</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-square-3-stack-3d"></i>
-                        <p class="js-classname">o-square-3-stack-3d</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-squares-2x2"></i>
-                        <p class="js-classname">o-squares-2x2</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-squares-plus"></i>
-                        <p class="js-classname">o-squares-plus</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-star"></i>
-                        <p class="js-classname">o-star</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-stop"></i>
-                        <p class="js-classname">o-stop</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-stop-circle"></i>
-                        <p class="js-classname">o-stop-circle</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-strikethrough"></i>
-                        <p class="js-classname">o-strikethrough</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-sun"></i>
-                        <p class="js-classname">o-sun</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-swatch"></i>
-                        <p class="js-classname">o-swatch</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-table-cells"></i>
-                        <p class="js-classname">o-table-cells</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-tag"></i>
-                        <p class="js-classname">o-tag</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-ticket"></i>
-                        <p class="js-classname">o-ticket</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-trash"></i>
-                        <p class="js-classname">o-trash</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-trophy"></i>
-                        <p class="js-classname">o-trophy</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-truck"></i>
-                        <p class="js-classname">o-truck</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-tv"></i>
-                        <p class="js-classname">o-tv</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-underline"></i>
-                        <p class="js-classname">o-underline</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-user"></i>
-                        <p class="js-classname">o-user</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-user-circle"></i>
-                        <p class="js-classname">o-user-circle</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-user-group"></i>
-                        <p class="js-classname">o-user-group</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-user-minus"></i>
-                        <p class="js-classname">o-user-minus</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-user-plus"></i>
-                        <p class="js-classname">o-user-plus</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-users"></i>
-                        <p class="js-classname">o-users</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-variable"></i>
-                        <p class="js-classname">o-variable</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-video-camera"></i>
-                        <p class="js-classname">o-video-camera</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-video-camera-slash"></i>
-                        <p class="js-classname">o-video-camera-slash</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-view-columns"></i>
-                        <p class="js-classname">o-view-columns</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-viewfinder-circle"></i>
-                        <p class="js-classname">o-viewfinder-circle</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-wallet"></i>
-                        <p class="js-classname">o-wallet</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-wifi"></i>
-                        <p class="js-classname">o-wifi</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-window"></i>
-                        <p class="js-classname">o-window</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-wrench"></i>
-                        <p class="js-classname">o-wrench</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-wrench-screwdriver"></i>
-                        <p class="js-classname">o-wrench-screwdriver</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-x-circle"></i>
-                        <p class="js-classname">o-x-circle</p>
-												
-                    </li>
-                
-                    <li>
-                        <i class="icon o-x-mark"></i>
-                        <p class="js-classname">o-x-mark</p>
-												
-                    </li>
-                
-				<!-- list of icons here with the proper class-->
-			</ul>
-		</section>
-	</div>
+<body>
+    <header>
+        <h1>Fathoms Outline Web Font</h1>
+    </header>
+
+    <div id="icons-wrapper">
+        <section>
+            <ul class="auto-grid">
+
+                <li>
+                    <i class="icon o-academic-cap"></i>
+                    <p class="js-classname">o-academic-cap</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-adjustments-horizontal"></i>
+                    <p class="js-classname">o-adjustments-horizontal</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-adjustments-vertical"></i>
+                    <p class="js-classname">o-adjustments-vertical</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-archive-box"></i>
+                    <p class="js-classname">o-archive-box</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-archive-box-arrow-down"></i>
+                    <p class="js-classname">o-archive-box-arrow-down</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-archive-box-x-mark"></i>
+                    <p class="js-classname">o-archive-box-x-mark</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-down"></i>
+                    <p class="js-classname">o-arrow-down</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-down-circle"></i>
+                    <p class="js-classname">o-arrow-down-circle</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-down-left"></i>
+                    <p class="js-classname">o-arrow-down-left</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-down-on-square"></i>
+                    <p class="js-classname">o-arrow-down-on-square</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-down-on-square-stack"></i>
+                    <p class="js-classname">o-arrow-down-on-square-stack</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-down-right"></i>
+                    <p class="js-classname">o-arrow-down-right</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-down-tray"></i>
+                    <p class="js-classname">o-arrow-down-tray</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-left"></i>
+                    <p class="js-classname">o-arrow-left</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-left-circle"></i>
+                    <p class="js-classname">o-arrow-left-circle</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-left-end-on-rectangle"></i>
+                    <p class="js-classname">o-arrow-left-end-on-rectangle</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-left-on-rectangle"></i>
+                    <p class="js-classname">o-arrow-left-on-rectangle</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-left-start-on-rectangle"></i>
+                    <p class="js-classname">o-arrow-left-start-on-rectangle</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-long-down"></i>
+                    <p class="js-classname">o-arrow-long-down</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-long-left"></i>
+                    <p class="js-classname">o-arrow-long-left</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-long-right"></i>
+                    <p class="js-classname">o-arrow-long-right</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-long-up"></i>
+                    <p class="js-classname">o-arrow-long-up</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-path"></i>
+                    <p class="js-classname">o-arrow-path</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-path-rounded-square"></i>
+                    <p class="js-classname">o-arrow-path-rounded-square</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-right"></i>
+                    <p class="js-classname">o-arrow-right</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-right-circle"></i>
+                    <p class="js-classname">o-arrow-right-circle</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-right-end-on-rectangle"></i>
+                    <p class="js-classname">o-arrow-right-end-on-rectangle</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-right-on-rectangle"></i>
+                    <p class="js-classname">o-arrow-right-on-rectangle</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-right-start-on-rectangle"></i>
+                    <p class="js-classname">o-arrow-right-start-on-rectangle</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-small-down"></i>
+                    <p class="js-classname">o-arrow-small-down</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-small-left"></i>
+                    <p class="js-classname">o-arrow-small-left</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-small-right"></i>
+                    <p class="js-classname">o-arrow-small-right</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-small-up"></i>
+                    <p class="js-classname">o-arrow-small-up</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-top-right-on-square"></i>
+                    <p class="js-classname">o-arrow-top-right-on-square</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-trending-down"></i>
+                    <p class="js-classname">o-arrow-trending-down</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-trending-up"></i>
+                    <p class="js-classname">o-arrow-trending-up</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-turn-down-left"></i>
+                    <p class="js-classname">o-arrow-turn-down-left</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-turn-down-right"></i>
+                    <p class="js-classname">o-arrow-turn-down-right</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-turn-left-down"></i>
+                    <p class="js-classname">o-arrow-turn-left-down</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-turn-left-up"></i>
+                    <p class="js-classname">o-arrow-turn-left-up</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-turn-right-down"></i>
+                    <p class="js-classname">o-arrow-turn-right-down</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-turn-right-up"></i>
+                    <p class="js-classname">o-arrow-turn-right-up</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-turn-up-left"></i>
+                    <p class="js-classname">o-arrow-turn-up-left</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-turn-up-right"></i>
+                    <p class="js-classname">o-arrow-turn-up-right</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-up"></i>
+                    <p class="js-classname">o-arrow-up</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-up-circle"></i>
+                    <p class="js-classname">o-arrow-up-circle</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-up-left"></i>
+                    <p class="js-classname">o-arrow-up-left</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-up-on-square"></i>
+                    <p class="js-classname">o-arrow-up-on-square</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-up-on-square-stack"></i>
+                    <p class="js-classname">o-arrow-up-on-square-stack</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-up-right"></i>
+                    <p class="js-classname">o-arrow-up-right</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-up-tray"></i>
+                    <p class="js-classname">o-arrow-up-tray</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-uturn-down"></i>
+                    <p class="js-classname">o-arrow-uturn-down</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-uturn-left"></i>
+                    <p class="js-classname">o-arrow-uturn-left</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-uturn-right"></i>
+                    <p class="js-classname">o-arrow-uturn-right</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrow-uturn-up"></i>
+                    <p class="js-classname">o-arrow-uturn-up</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrows-pointing-in"></i>
+                    <p class="js-classname">o-arrows-pointing-in</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrows-pointing-out"></i>
+                    <p class="js-classname">o-arrows-pointing-out</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrows-right-left"></i>
+                    <p class="js-classname">o-arrows-right-left</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-arrows-up-down"></i>
+                    <p class="js-classname">o-arrows-up-down</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-at-symbol"></i>
+                    <p class="js-classname">o-at-symbol</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-backspace"></i>
+                    <p class="js-classname">o-backspace</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-backward"></i>
+                    <p class="js-classname">o-backward</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-banknotes"></i>
+                    <p class="js-classname">o-banknotes</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-bars-2"></i>
+                    <p class="js-classname">o-bars-2</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-bars-3"></i>
+                    <p class="js-classname">o-bars-3</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-bars-3-bottom-left"></i>
+                    <p class="js-classname">o-bars-3-bottom-left</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-bars-3-bottom-right"></i>
+                    <p class="js-classname">o-bars-3-bottom-right</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-bars-3-center-left"></i>
+                    <p class="js-classname">o-bars-3-center-left</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-bars-4"></i>
+                    <p class="js-classname">o-bars-4</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-bars-arrow-down"></i>
+                    <p class="js-classname">o-bars-arrow-down</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-bars-arrow-up"></i>
+                    <p class="js-classname">o-bars-arrow-up</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-battery-0"></i>
+                    <p class="js-classname">o-battery-0</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-battery-100"></i>
+                    <p class="js-classname">o-battery-100</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-battery-50"></i>
+                    <p class="js-classname">o-battery-50</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-beaker"></i>
+                    <p class="js-classname">o-beaker</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-bell"></i>
+                    <p class="js-classname">o-bell</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-bell-alert"></i>
+                    <p class="js-classname">o-bell-alert</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-bell-slash"></i>
+                    <p class="js-classname">o-bell-slash</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-bell-snooze"></i>
+                    <p class="js-classname">o-bell-snooze</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-bold"></i>
+                    <p class="js-classname">o-bold</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-bolt"></i>
+                    <p class="js-classname">o-bolt</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-bolt-slash"></i>
+                    <p class="js-classname">o-bolt-slash</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-book-open"></i>
+                    <p class="js-classname">o-book-open</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-bookmark"></i>
+                    <p class="js-classname">o-bookmark</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-bookmark-slash"></i>
+                    <p class="js-classname">o-bookmark-slash</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-bookmark-square"></i>
+                    <p class="js-classname">o-bookmark-square</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-briefcase"></i>
+                    <p class="js-classname">o-briefcase</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-bug-ant"></i>
+                    <p class="js-classname">o-bug-ant</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-building-library"></i>
+                    <p class="js-classname">o-building-library</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-building-office"></i>
+                    <p class="js-classname">o-building-office</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-building-office-2"></i>
+                    <p class="js-classname">o-building-office-2</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-building-storefront"></i>
+                    <p class="js-classname">o-building-storefront</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-cake"></i>
+                    <p class="js-classname">o-cake</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-calculator"></i>
+                    <p class="js-classname">o-calculator</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-calendar"></i>
+                    <p class="js-classname">o-calendar</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-calendar-date-range"></i>
+                    <p class="js-classname">o-calendar-date-range</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-calendar-days"></i>
+                    <p class="js-classname">o-calendar-days</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-camera"></i>
+                    <p class="js-classname">o-camera</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-chart-bar"></i>
+                    <p class="js-classname">o-chart-bar</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-chart-bar-square"></i>
+                    <p class="js-classname">o-chart-bar-square</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-chart-pie"></i>
+                    <p class="js-classname">o-chart-pie</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-chat-bubble-bottom-center"></i>
+                    <p class="js-classname">o-chat-bubble-bottom-center</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-chat-bubble-bottom-center-text"></i>
+                    <p class="js-classname">o-chat-bubble-bottom-center-text</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-chat-bubble-left"></i>
+                    <p class="js-classname">o-chat-bubble-left</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-chat-bubble-left-ellipsis"></i>
+                    <p class="js-classname">o-chat-bubble-left-ellipsis</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-chat-bubble-left-right"></i>
+                    <p class="js-classname">o-chat-bubble-left-right</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-chat-bubble-oval-left"></i>
+                    <p class="js-classname">o-chat-bubble-oval-left</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-chat-bubble-oval-left-ellipsis"></i>
+                    <p class="js-classname">o-chat-bubble-oval-left-ellipsis</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-check"></i>
+                    <p class="js-classname">o-check</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-check-badge"></i>
+                    <p class="js-classname">o-check-badge</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-check-circle"></i>
+                    <p class="js-classname">o-check-circle</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-chevron-double-down"></i>
+                    <p class="js-classname">o-chevron-double-down</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-chevron-double-left"></i>
+                    <p class="js-classname">o-chevron-double-left</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-chevron-double-right"></i>
+                    <p class="js-classname">o-chevron-double-right</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-chevron-double-up"></i>
+                    <p class="js-classname">o-chevron-double-up</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-chevron-down"></i>
+                    <p class="js-classname">o-chevron-down</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-chevron-left"></i>
+                    <p class="js-classname">o-chevron-left</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-chevron-right"></i>
+                    <p class="js-classname">o-chevron-right</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-chevron-up"></i>
+                    <p class="js-classname">o-chevron-up</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-chevron-up-down"></i>
+                    <p class="js-classname">o-chevron-up-down</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-circle-stack"></i>
+                    <p class="js-classname">o-circle-stack</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-clipboard"></i>
+                    <p class="js-classname">o-clipboard</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-clipboard-document"></i>
+                    <p class="js-classname">o-clipboard-document</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-clipboard-document-check"></i>
+                    <p class="js-classname">o-clipboard-document-check</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-clipboard-document-list"></i>
+                    <p class="js-classname">o-clipboard-document-list</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-clock"></i>
+                    <p class="js-classname">o-clock</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-cloud"></i>
+                    <p class="js-classname">o-cloud</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-cloud-arrow-down"></i>
+                    <p class="js-classname">o-cloud-arrow-down</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-cloud-arrow-up"></i>
+                    <p class="js-classname">o-cloud-arrow-up</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-code-bracket"></i>
+                    <p class="js-classname">o-code-bracket</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-code-bracket-square"></i>
+                    <p class="js-classname">o-code-bracket-square</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-cog"></i>
+                    <p class="js-classname">o-cog</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-cog-6-tooth"></i>
+                    <p class="js-classname">o-cog-6-tooth</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-cog-8-tooth"></i>
+                    <p class="js-classname">o-cog-8-tooth</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-command-line"></i>
+                    <p class="js-classname">o-command-line</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-computer-desktop"></i>
+                    <p class="js-classname">o-computer-desktop</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-cpu-chip"></i>
+                    <p class="js-classname">o-cpu-chip</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-credit-card"></i>
+                    <p class="js-classname">o-credit-card</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-cube"></i>
+                    <p class="js-classname">o-cube</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-cube-transparent"></i>
+                    <p class="js-classname">o-cube-transparent</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-currency-bangladeshi"></i>
+                    <p class="js-classname">o-currency-bangladeshi</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-currency-dollar"></i>
+                    <p class="js-classname">o-currency-dollar</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-currency-euro"></i>
+                    <p class="js-classname">o-currency-euro</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-currency-pound"></i>
+                    <p class="js-classname">o-currency-pound</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-currency-rupee"></i>
+                    <p class="js-classname">o-currency-rupee</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-currency-yen"></i>
+                    <p class="js-classname">o-currency-yen</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-cursor-arrow-rays"></i>
+                    <p class="js-classname">o-cursor-arrow-rays</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-cursor-arrow-ripple"></i>
+                    <p class="js-classname">o-cursor-arrow-ripple</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-device-phone-mobile"></i>
+                    <p class="js-classname">o-device-phone-mobile</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-device-tablet"></i>
+                    <p class="js-classname">o-device-tablet</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-divide"></i>
+                    <p class="js-classname">o-divide</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-document"></i>
+                    <p class="js-classname">o-document</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-document-arrow-down"></i>
+                    <p class="js-classname">o-document-arrow-down</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-document-arrow-up"></i>
+                    <p class="js-classname">o-document-arrow-up</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-document-chart-bar"></i>
+                    <p class="js-classname">o-document-chart-bar</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-document-check"></i>
+                    <p class="js-classname">o-document-check</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-document-currency-bangladeshi"></i>
+                    <p class="js-classname">o-document-currency-bangladeshi</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-document-currency-dollar"></i>
+                    <p class="js-classname">o-document-currency-dollar</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-document-currency-euro"></i>
+                    <p class="js-classname">o-document-currency-euro</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-document-currency-pound"></i>
+                    <p class="js-classname">o-document-currency-pound</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-document-currency-rupee"></i>
+                    <p class="js-classname">o-document-currency-rupee</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-document-currency-yen"></i>
+                    <p class="js-classname">o-document-currency-yen</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-document-duplicate"></i>
+                    <p class="js-classname">o-document-duplicate</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-document-magnifying-glass"></i>
+                    <p class="js-classname">o-document-magnifying-glass</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-document-minus"></i>
+                    <p class="js-classname">o-document-minus</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-document-plus"></i>
+                    <p class="js-classname">o-document-plus</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-document-text"></i>
+                    <p class="js-classname">o-document-text</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-ellipsis-horizontal"></i>
+                    <p class="js-classname">o-ellipsis-horizontal</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-ellipsis-horizontal-circle"></i>
+                    <p class="js-classname">o-ellipsis-horizontal-circle</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-ellipsis-vertical"></i>
+                    <p class="js-classname">o-ellipsis-vertical</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-envelope"></i>
+                    <p class="js-classname">o-envelope</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-envelope-open"></i>
+                    <p class="js-classname">o-envelope-open</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-equals"></i>
+                    <p class="js-classname">o-equals</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-exclamation-circle"></i>
+                    <p class="js-classname">o-exclamation-circle</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-exclamation-triangle"></i>
+                    <p class="js-classname">o-exclamation-triangle</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-eye"></i>
+                    <p class="js-classname">o-eye</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-eye-dropper"></i>
+                    <p class="js-classname">o-eye-dropper</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-eye-slash"></i>
+                    <p class="js-classname">o-eye-slash</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-face-frown"></i>
+                    <p class="js-classname">o-face-frown</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-face-smile"></i>
+                    <p class="js-classname">o-face-smile</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-film"></i>
+                    <p class="js-classname">o-film</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-finger-print"></i>
+                    <p class="js-classname">o-finger-print</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-fire"></i>
+                    <p class="js-classname">o-fire</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-flag"></i>
+                    <p class="js-classname">o-flag</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-folder"></i>
+                    <p class="js-classname">o-folder</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-folder-arrow-down"></i>
+                    <p class="js-classname">o-folder-arrow-down</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-folder-minus"></i>
+                    <p class="js-classname">o-folder-minus</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-folder-open"></i>
+                    <p class="js-classname">o-folder-open</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-folder-plus"></i>
+                    <p class="js-classname">o-folder-plus</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-forward"></i>
+                    <p class="js-classname">o-forward</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-funnel"></i>
+                    <p class="js-classname">o-funnel</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-gif"></i>
+                    <p class="js-classname">o-gif</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-gift"></i>
+                    <p class="js-classname">o-gift</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-gift-top"></i>
+                    <p class="js-classname">o-gift-top</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-globe-alt"></i>
+                    <p class="js-classname">o-globe-alt</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-globe-americas"></i>
+                    <p class="js-classname">o-globe-americas</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-globe-asia-australia"></i>
+                    <p class="js-classname">o-globe-asia-australia</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-globe-europe-africa"></i>
+                    <p class="js-classname">o-globe-europe-africa</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-h1"></i>
+                    <p class="js-classname">o-h1</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-h2"></i>
+                    <p class="js-classname">o-h2</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-h3"></i>
+                    <p class="js-classname">o-h3</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-hand-raised"></i>
+                    <p class="js-classname">o-hand-raised</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-hand-thumb-down"></i>
+                    <p class="js-classname">o-hand-thumb-down</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-hand-thumb-up"></i>
+                    <p class="js-classname">o-hand-thumb-up</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-hashtag"></i>
+                    <p class="js-classname">o-hashtag</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-heart"></i>
+                    <p class="js-classname">o-heart</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-home"></i>
+                    <p class="js-classname">o-home</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-home-modern"></i>
+                    <p class="js-classname">o-home-modern</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-identification"></i>
+                    <p class="js-classname">o-identification</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-inbox"></i>
+                    <p class="js-classname">o-inbox</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-inbox-arrow-down"></i>
+                    <p class="js-classname">o-inbox-arrow-down</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-inbox-stack"></i>
+                    <p class="js-classname">o-inbox-stack</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-information-circle"></i>
+                    <p class="js-classname">o-information-circle</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-italic"></i>
+                    <p class="js-classname">o-italic</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-key"></i>
+                    <p class="js-classname">o-key</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-language"></i>
+                    <p class="js-classname">o-language</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-lifebuoy"></i>
+                    <p class="js-classname">o-lifebuoy</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-light-bulb"></i>
+                    <p class="js-classname">o-light-bulb</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-link"></i>
+                    <p class="js-classname">o-link</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-link-slash"></i>
+                    <p class="js-classname">o-link-slash</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-list-bullet"></i>
+                    <p class="js-classname">o-list-bullet</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-lock-closed"></i>
+                    <p class="js-classname">o-lock-closed</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-lock-open"></i>
+                    <p class="js-classname">o-lock-open</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-magnifying-glass"></i>
+                    <p class="js-classname">o-magnifying-glass</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-magnifying-glass-circle"></i>
+                    <p class="js-classname">o-magnifying-glass-circle</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-magnifying-glass-minus"></i>
+                    <p class="js-classname">o-magnifying-glass-minus</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-magnifying-glass-plus"></i>
+                    <p class="js-classname">o-magnifying-glass-plus</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-map"></i>
+                    <p class="js-classname">o-map</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-map-pin"></i>
+                    <p class="js-classname">o-map-pin</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-megaphone"></i>
+                    <p class="js-classname">o-megaphone</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-microphone"></i>
+                    <p class="js-classname">o-microphone</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-minus"></i>
+                    <p class="js-classname">o-minus</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-minus-circle"></i>
+                    <p class="js-classname">o-minus-circle</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-minus-small"></i>
+                    <p class="js-classname">o-minus-small</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-moon"></i>
+                    <p class="js-classname">o-moon</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-musical-note"></i>
+                    <p class="js-classname">o-musical-note</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-newspaper"></i>
+                    <p class="js-classname">o-newspaper</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-no-symbol"></i>
+                    <p class="js-classname">o-no-symbol</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-numbered-list"></i>
+                    <p class="js-classname">o-numbered-list</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-paint-brush"></i>
+                    <p class="js-classname">o-paint-brush</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-paper-airplane"></i>
+                    <p class="js-classname">o-paper-airplane</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-paper-clip"></i>
+                    <p class="js-classname">o-paper-clip</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-pause"></i>
+                    <p class="js-classname">o-pause</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-pause-circle"></i>
+                    <p class="js-classname">o-pause-circle</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-pencil"></i>
+                    <p class="js-classname">o-pencil</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-pencil-square"></i>
+                    <p class="js-classname">o-pencil-square</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-percent-badge"></i>
+                    <p class="js-classname">o-percent-badge</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-phone"></i>
+                    <p class="js-classname">o-phone</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-phone-arrow-down-left"></i>
+                    <p class="js-classname">o-phone-arrow-down-left</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-phone-arrow-up-right"></i>
+                    <p class="js-classname">o-phone-arrow-up-right</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-phone-x-mark"></i>
+                    <p class="js-classname">o-phone-x-mark</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-photo"></i>
+                    <p class="js-classname">o-photo</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-play"></i>
+                    <p class="js-classname">o-play</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-play-circle"></i>
+                    <p class="js-classname">o-play-circle</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-play-pause"></i>
+                    <p class="js-classname">o-play-pause</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-plus"></i>
+                    <p class="js-classname">o-plus</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-plus-circle"></i>
+                    <p class="js-classname">o-plus-circle</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-plus-small"></i>
+                    <p class="js-classname">o-plus-small</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-power"></i>
+                    <p class="js-classname">o-power</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-presentation-chart-bar"></i>
+                    <p class="js-classname">o-presentation-chart-bar</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-presentation-chart-line"></i>
+                    <p class="js-classname">o-presentation-chart-line</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-printer"></i>
+                    <p class="js-classname">o-printer</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-puzzle-piece"></i>
+                    <p class="js-classname">o-puzzle-piece</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-qr-code"></i>
+                    <p class="js-classname">o-qr-code</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-question-mark-circle"></i>
+                    <p class="js-classname">o-question-mark-circle</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-queue-list"></i>
+                    <p class="js-classname">o-queue-list</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-radio"></i>
+                    <p class="js-classname">o-radio</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-receipt-percent"></i>
+                    <p class="js-classname">o-receipt-percent</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-receipt-refund"></i>
+                    <p class="js-classname">o-receipt-refund</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-rectangle-group"></i>
+                    <p class="js-classname">o-rectangle-group</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-rectangle-stack"></i>
+                    <p class="js-classname">o-rectangle-stack</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-rocket-launch"></i>
+                    <p class="js-classname">o-rocket-launch</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-rss"></i>
+                    <p class="js-classname">o-rss</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-scale"></i>
+                    <p class="js-classname">o-scale</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-scissors"></i>
+                    <p class="js-classname">o-scissors</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-server"></i>
+                    <p class="js-classname">o-server</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-server-stack"></i>
+                    <p class="js-classname">o-server-stack</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-share"></i>
+                    <p class="js-classname">o-share</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-shield-check"></i>
+                    <p class="js-classname">o-shield-check</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-shield-exclamation"></i>
+                    <p class="js-classname">o-shield-exclamation</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-shopping-bag"></i>
+                    <p class="js-classname">o-shopping-bag</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-shopping-cart"></i>
+                    <p class="js-classname">o-shopping-cart</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-signal"></i>
+                    <p class="js-classname">o-signal</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-signal-slash"></i>
+                    <p class="js-classname">o-signal-slash</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-slash"></i>
+                    <p class="js-classname">o-slash</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-sparkles"></i>
+                    <p class="js-classname">o-sparkles</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-speaker-wave"></i>
+                    <p class="js-classname">o-speaker-wave</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-speaker-x-mark"></i>
+                    <p class="js-classname">o-speaker-x-mark</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-square-2-stack"></i>
+                    <p class="js-classname">o-square-2-stack</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-square-3-stack-3d"></i>
+                    <p class="js-classname">o-square-3-stack-3d</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-squares-2x2"></i>
+                    <p class="js-classname">o-squares-2x2</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-squares-plus"></i>
+                    <p class="js-classname">o-squares-plus</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-star"></i>
+                    <p class="js-classname">o-star</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-stop"></i>
+                    <p class="js-classname">o-stop</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-stop-circle"></i>
+                    <p class="js-classname">o-stop-circle</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-strikethrough"></i>
+                    <p class="js-classname">o-strikethrough</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-sun"></i>
+                    <p class="js-classname">o-sun</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-swatch"></i>
+                    <p class="js-classname">o-swatch</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-table-cells"></i>
+                    <p class="js-classname">o-table-cells</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-tag"></i>
+                    <p class="js-classname">o-tag</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-ticket"></i>
+                    <p class="js-classname">o-ticket</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-trash"></i>
+                    <p class="js-classname">o-trash</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-trophy"></i>
+                    <p class="js-classname">o-trophy</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-truck"></i>
+                    <p class="js-classname">o-truck</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-tv"></i>
+                    <p class="js-classname">o-tv</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-underline"></i>
+                    <p class="js-classname">o-underline</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-user"></i>
+                    <p class="js-classname">o-user</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-user-circle"></i>
+                    <p class="js-classname">o-user-circle</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-user-group"></i>
+                    <p class="js-classname">o-user-group</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-user-minus"></i>
+                    <p class="js-classname">o-user-minus</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-user-plus"></i>
+                    <p class="js-classname">o-user-plus</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-users"></i>
+                    <p class="js-classname">o-users</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-variable"></i>
+                    <p class="js-classname">o-variable</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-video-camera"></i>
+                    <p class="js-classname">o-video-camera</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-video-camera-slash"></i>
+                    <p class="js-classname">o-video-camera-slash</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-view-columns"></i>
+                    <p class="js-classname">o-view-columns</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-viewfinder-circle"></i>
+                    <p class="js-classname">o-viewfinder-circle</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-wallet"></i>
+                    <p class="js-classname">o-wallet</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-wifi"></i>
+                    <p class="js-classname">o-wifi</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-window"></i>
+                    <p class="js-classname">o-window</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-wrench"></i>
+                    <p class="js-classname">o-wrench</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-wrench-screwdriver"></i>
+                    <p class="js-classname">o-wrench-screwdriver</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-x-circle"></i>
+                    <p class="js-classname">o-x-circle</p>
+
+                </li>
+
+                <li>
+                    <i class="icon o-x-mark"></i>
+                    <p class="js-classname">o-x-mark</p>
+
+                </li>
+
+                <!-- list of icons here with the proper class-->
+            </ul>
+        </section>
+    </div>
+    <script>
+        let iconContainer = document.getElementById('iconContainer');
+        document.querySelectorAll('li').forEach((element) => {
+            let copied = document.createElement('div');
+            copied.classList.add('note');
+            copied.textContent = 'Copied !';
+            element.appendChild(copied);
+        });
+
+        iconContainer.addEventListener('click', function (event) {
+            let targetElement = event.target.closest('li');
+            if (targetElement) {
+                let classNameElement = targetElement.querySelector('.js-classname');
+                let className = classNameElement.textContent || classNameElement.innerText;
+                navigator.clipboard.writeText(`icon ` + className)
+                    .then(() => {
+                        targetElement.classList.add('copied');
+                        setTimeout(() => {
+                            targetElement.classList.remove('copied');
+                        }, 1000);
+                    })
+                    .catch(err => {
+                        console.error('Erreur lors de la copie: ', err);
+                    });
+            }
+        });
+    </script>
 </body>
+
 </html>
