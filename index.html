@@ -17,6 +17,7 @@
         ::-webkit-scrollbar {
             display: none;
         }
+
         body {
             background: #0d1117;
             color: white;
@@ -27,10 +28,14 @@
             position: sticky;
             bottom: 0;
             width: 100%;
-            height: 20rem;
+            height: 20dvh;
             margin-top: 2rem;
-            backdrop-filter: blur(5px);
-            mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0) 100%);
+            backdrop-filter: blur(.38rem);
+            background: #00000080;
+            /*black background with 50% alpha*/
+            mask-image: linear-gradient(to top,
+                    rgba(0, 0, 0, 1) 25%,
+                    rgba(0, 0, 0, 0) 100%);
             pointer-events: none;
         }
 
